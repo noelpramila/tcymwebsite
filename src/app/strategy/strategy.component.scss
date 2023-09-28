@@ -1,0 +1,81 @@
+@import "../style/variables.scss";
+@import "../../styles.scss";
+
+.strategy-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6em;
+
+    @extend .app-container;
+    background-color: $primary-shade;
+
+    img {
+        border-radius: 20px;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+
+        width: 320px;
+        height: 320px;
+    }
+
+    .strategy-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h4 {
+            @include display-s;
+        }
+
+        h6 {
+            @include body-m;
+            text-align: justify;
+            line-height: 1.7;
+        }
+    }
+}
+
+@media screen and (min-width: $device-tablet) {
+
+    .strategy-container {
+        padding: 3% 15% 3% 15%;
+    }
+
+}
+
+@media screen and (max-width: $device-tablet) {
+
+    .strategy-container {
+        flex-direction: column-reverse;
+        height: fit-content;
+        justify-content: space-around;
+        gap: 2em;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: $device-phone) {
+
+    .strategy-container {
+        flex-direction: column-reverse;
+        height: fit-content;
+        justify-content: space-around;
+        padding-top: 5%;
+        padding-bottom: 7%;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .strategy-description {
+            h6 {
+                @include body-s;
+            }
+        }
+    }
+
+}

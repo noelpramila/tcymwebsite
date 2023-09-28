@@ -1,0 +1,22 @@
+<header>
+    <div class="logo-container">
+        <a href="">
+            <div class="logo">
+                <img src="../../assets/logo/TCYM.png">
+                <div class="logo-title">
+                    <h6>தமிழ்நாடு கத்தோலிக்க இளைஞர் இயக்கம்</h6>
+                    <h6>Tamilnadu Catholic Youth Movement</h6>
+                </div>
+            </div>
+        </a>
+        <a class="explore-button" (click)="clickMenu()">
+            <img src="../../assets/icons/ArrowRight.svg">
+            <span>Explore</span>
+        </a>
+    </div>
+    <ul class="menu" *ngIf="isMenuOpen">
+        <li *ngFor="let menu of navBarMenu" routerLinkActive="active" [routerLink]="[menu.link]" (click)="clickMenu()">
+            <a>{{ menu.name }}</a>
+        </li>
+    </ul>
+</header>

@@ -1,0 +1,29 @@
+<div class="team-container">
+    <div class="title">
+        <h4>{{ teamData.title }}</h4>
+        <h6>{{ teamData.description }}</h6>
+    </div>
+    <div class="team-card">
+        <div class="card" *ngFor="let person of teamData.individuals">
+            <img [src]="[person.pictureUrl]" [alt]="[person.pictureAltText]">
+            <h5>{{ person.name }}</h5>
+            <h6>{{ person.designation }}</h6>
+            <hr>
+            <div class="card-footer">
+                <div class="birthday">
+                    <img src="../../assets/icons/birthday.png">
+                    &nbsp;&nbsp;
+                    <h6>{{ person.birthday }}</h6>
+                </div>
+                <div class="social-links">
+                    <a *ngIf="person.readMoreUrl" [href]="[person.readMoreUrl]" target="_blank"><img
+                            src="../../assets/icons/ProfileReadMoreIcon.svg"></a>
+                    <a *ngIf="person.linkedInUrl" [href]="[person.linkedInUrl]" target="_blank"><img
+                            src="../../assets/icons/ProfileLinkedInIcon.svg"></a>
+                    <a *ngIf="person.instagramUrl" [href]="[person.instagramUrl]" target="_blank"><img
+                            src="../../assets/icons/ProfileInstagramIcon.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+// COLOR
+$primary-background: #F8F9FF; // Zircon
+$primary-shade: #D8D8D8; // Alto
+$primary-footer: #2D2D2D; // Mine Shaft
+
+$primary-button: #009379; // Observatory
+$secondary-button-bg: #E5F4F2; // Aqua Squeeze
+
+$theme-yellow: #F8D57E; // Sweet Corn
+$theme-pink: #F2BFAF; // Mandys Pink
+$theme-red: #FF6250; // Persimmon
+
+$white: #FFFFFF; // White
+
+// DEVICE MAX WIDTH
+$device-tablet: 1007px;
+$device-phone: 640px;
+
+// TYPOGRAPHY
+@mixin display-2xl {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+};
+
+@mixin display-xl {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+};
+
+@mixin display-l {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+};
+
+@mixin display-m {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+};
+
+@mixin display-s {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+};
+
+@mixin display-xs {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+};
+
+@mixin body-xl {
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+};
+
+@mixin body-l {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+};
+
+@mixin body-m {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+};
+
+@mixin body-s {
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
+};

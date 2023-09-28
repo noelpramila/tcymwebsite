@@ -1,0 +1,31 @@
+<div class="services-component">
+    <div class="search-bar">
+        <div class="search">
+            <input type="search" placeholder="search" (keyup)="onSearchKey($event)" />
+        </div>
+    </div>
+    <div class="show-services">
+        <div class="card" *ngFor="let service of services | servicesFilter: searchText">
+            <img [src]="service.image">
+            <h3>{{ service.title }}</h3>
+            <h5>{{ service.description | descriptionSlicer }}</h5>
+            <a (click)="openModel(service)">Expand</a>
+        </div>
+    </div>
+    <div id="page-mask" *ngIf="showModel"></div>
+    <div class="service-model" *ngIf="showModel">
+        <div class="card">
+            <div class="close-btn">
+                <h6 (click)="closeModel()">close</h6>
+            </div>
+            <h3>{{ selectedService?.title }}</h3>
+            <div class="maintainer">
+                <span>Maintained by </span>
+                <span class="maintainer-text">{{ selectedService?.maintainer }}</span>
+            </div>
+            <hr/>
+            <h4>{{ selectedService?.description }}</h4>
+            <h5>Connect with us through {{ selectedService?.registrationLink }}</h5>
+        </div>
+    </div>
+</div>

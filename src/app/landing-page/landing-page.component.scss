@@ -1,0 +1,16 @@
+@import "../style/variables.scss";
+
+.landing-page-container {
+    position: relative;
+
+    p {
+        @include display-l;
+        color: $theme-yellow;
+        margin: unset;
+    };
+    
+    h1 {
+        @include display-xl;
+        margin: unset;
+    };
+}

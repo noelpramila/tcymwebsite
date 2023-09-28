@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../style/variables.scss";
+
+html, body {
+    height: 100%;
+    margin: unset;
+    background-color: $primary-background;
+}
+
+app-root {
+    display: block;
+    height: 100%
+}
+
+.app-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}

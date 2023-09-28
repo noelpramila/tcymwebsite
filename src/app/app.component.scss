@@ -1,0 +1,14 @@
+.root-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    app-header {
+        margin-bottom: 60px;
+        z-index: 1;
+    }
+
+    app-footer {
+        margin-top: auto;
+    }
+}

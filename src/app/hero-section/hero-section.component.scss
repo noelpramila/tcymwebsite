@@ -1,0 +1,118 @@
+@import "../style/variables.scss";
+@import "../../styles.scss";
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @extend .app-container;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/pictures/landing.jpeg');
+    background-position: center;
+
+    height: 700px;
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 550px;
+        height: 400px;
+        padding-bottom: 50px;
+
+        h2 {
+            @include display-xl;
+            text-align: center;
+            color: $white;
+        }
+
+        h6 {
+            @include body-m;
+            text-align: center;
+            line-height: 1.5;
+            color: $white;
+        }
+
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            button {
+                border-radius: 20px;
+                height: 40px;
+
+                @include display-xs;
+                font-size: 12px;
+            }
+
+            .services-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                border: none;
+                background-color: $primary-button;
+                width: 170px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                p {
+                    color: $white;
+                    margin: unset;
+                }
+            }
+
+            .feed-btn {
+                border: 1px solid $primary-button;
+
+                color: $primary-button;
+                background-color: $white;
+                width: 100px;
+            }
+        }
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: $device-tablet) {
+
+    .feed-btn {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: $device-phone) {
+
+    .hero-container {
+        height: 600px;
+    }
+
+    .hero-container .hero-text h2 {
+        @include display-l;
+    }
+
+    .feed-btn {
+        display: none;
+    }
+
+}

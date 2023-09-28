@@ -1,0 +1,102 @@
+@import "../style/variables.scss";
+@import "../../styles.scss";
+
+.metrics-container {
+    @extend .app-container;
+    padding-top: 60px;
+    padding-bottom: 70px;
+
+    .metrics-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        height: 100px;
+        .metrics-title {
+            h4 {
+                @include display-s;
+                text-align: center;
+            }
+    
+            h6 {
+                @include body-s;
+                text-align: center;
+            }
+        }
+    
+        .metrics {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+    
+            .metrics-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom: 3px solid $theme-pink;
+    
+                background-color: $white;
+                width: 180px;
+                height: 120px;
+    
+                h4 {
+                    @include display-s;
+                    text-align: center;
+                    color: $primary-footer;
+                }
+    
+                h6 {
+                    @include body-s;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            @include display-m;
+        }
+
+        h6 {
+            @include body-m;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: $device-tablet) {
+
+    .metrics-container .metrics-details {
+        height: fit-content;
+    }
+
+    .metrics-container .metrics-details .metrics-title {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: $device-phone) {
+
+    .metrics-container .metrics-details {
+        height: fit-content;
+    }
+
+    .metrics-container .metrics-details .metrics-title {
+        margin-bottom: 30px;
+    }
+
+}
