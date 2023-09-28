@@ -30,27 +30,28 @@ const commissionChiefs: Individual[] = [
     }
 ].concat(youthCommissionDirector);
 
-const websiteDeveloperTeam: Individual[] = [youthCommissionDirector].concat([
+const websiteDeveloperTeam: Individual[] = ([
+    {
+        name: 'Noel Pushpa Pramila',
+        designation: 'Lead Full Stack Developer',
+        birthday: 'Nov 30',
+        pictureUrl: ASSETS_PICTURE_URL + 'noel.jpeg',
+        pictureAltText: PREFIX_ALT_TEXT + 'NOel',
+        readMoreUrl: '',
+        instagramUrl: '',
+        linkedInUrl: ''
+    },
     {
         name: 'Mr. Maria Irudaya Regilan J',
-        designation: 'Product Owner',
+        designation: 'Lead Full Stack Developer',
         birthday: 'May 11',
         pictureUrl: ASSETS_PICTURE_URL + 'Regilan.jpg',
         pictureAltText: PREFIX_ALT_TEXT + 'Regilan',
         readMoreUrl: '',
         instagramUrl: INSTA_URL + 'regilanj/',
         linkedInUrl: LINKEDIN_URL + 'regilanj/'
-    },
-    {
-        name: 'Miss. Anitha A V',
-        designation: 'Lead Full Stack Developer',
-        birthday: 'May 11',
-        pictureUrl: ASSETS_PICTURE_URL + 'Anitha.jpeg',
-        pictureAltText: PREFIX_ALT_TEXT + 'Anitha',
-        readMoreUrl: '',
-        instagramUrl: INSTA_URL + 'av_anitha/',
-        linkedInUrl: LINKEDIN_URL + 'anitha-a-v-0229b6160/'
     }
+ 
 ]);
 
 // TEAM COMPONENT DATA
