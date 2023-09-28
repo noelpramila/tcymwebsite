@@ -7,13 +7,13 @@ const LINKEDIN_URL: string = 'https://www.linkedin.com/in/';
 const ASSETS_PICTURE_URL: string = '../../assets/pictures/';
 
 const youthCommissionDirector: Individual = {
-    name: 'Rev Fr. Ronald Richard',
-    designation: 'Director of Archdiocesan Youth Commission',
-    birthday: 'Dec 5',
-    pictureUrl: ASSETS_PICTURE_URL + 'nazarene.jpeg',
-    pictureAltText: PREFIX_ALT_TEXT + 'Rev Fr. Ronald Richard',
+    name: 'பணி.மபா. மார்ட்டின்  ஜோசப்,',
+    designation: 'செயலர்',
+    birthday: '',
+    pictureUrl: ASSETS_PICTURE_URL + 'martin.jpg',
+    pictureAltText: PREFIX_ALT_TEXT + 'தமிழ்நாடு இளைஞர் பணிக்குழு',
     readMoreUrl: '',
-    instagramUrl: INSTA_URL + 'sronaldrichard/',
+    instagramUrl: '',
     linkedInUrl: ''
 };
 
@@ -21,10 +21,10 @@ const commissionChiefs: Individual[] = [
     {
         name: 'மேதகு ஆயர்.நசரேன் சூசை',
         designation: 'இளைஞர் பணிக்குழு தலைவர்',
-        birthday: 'Feb 15',
-        pictureUrl: ASSETS_PICTURE_URL + 'Archbishop.jpg',
-        pictureAltText: PREFIX_ALT_TEXT + 'Archbishop George Antonysamy',
-        readMoreUrl: 'http://archdioceseofmadrasmylapore.in/archbishop/',
+        birthday: '',
+        pictureUrl: ASSETS_PICTURE_URL + 'nazarene.jpeg',
+        pictureAltText: PREFIX_ALT_TEXT + 'Bishop Nazarene Soosai',
+        readMoreUrl: 'https://en.wikipedia.org/wiki/Nazarene_Soosai',
         instagramUrl: '',
         linkedInUrl: ''
     }
@@ -57,7 +57,7 @@ const websiteDeveloperTeam: Individual[] = [youthCommissionDirector].concat([
 
 // Leaders in Landing Page
 export const LEADERS: TeamData = {
-    title: 'தமிழ்நாடு கத்தோலிக்க இளைஞர் இயக்கம் - Our Leaders',
+    title: 'Our Leaders',
     description: 'இயேசுவின் நற்செய்தி மதிப்பீடுகளான உண்மை, அன்பு, நீதி, சமத்துவம். சகோதரத்துவம் ஆகியவற்றின் அடிப்படையில் புதிய சமுதாயம் படைக்கும் பணியில் இளைஞர்களை உருவாக்கி ஈடுபட வைத்தல்.',
     individuals: commissionChiefs
 };

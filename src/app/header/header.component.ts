@@ -11,23 +11,23 @@ export class HeaderComponent implements OnInit {
     {
       name: 'Desking',
       link: ''
-    },
-    {
-      name: 'Council',
-      link: ''
-    },
-    {
-      name: 'Services',
-      link: 'services'
-    },
-    {
-      name: 'Calendar',
-      link: ''
-    },
-    {
-      name: 'Feed',
-      link: ''
     }
+    // {
+    //   name: 'Council',
+    //   link: ''
+    // },
+    // {
+    //   name: 'Services',
+    //   link: 'services'
+    // },
+    // {
+    //   name: 'Calendar',
+    //   link: ''
+    // },
+    // {
+    //   name: 'Feed',
+    //   link: ''
+    // }
   ]
 
   isMenuOpen: boolean = false;
